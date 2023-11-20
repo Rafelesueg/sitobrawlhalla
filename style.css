@@ -30,6 +30,8 @@ h1 {
     color:orange;                               /* tutte le scritte in h4, di color arancione */
 }
 h4 {
+    font-size:30px;
+    text-align: center;
     color:orange;                               /* tutte le scritte in h4, di color arancione */
 }
 img {                                             /* tutte le immagini ridimensionate sotto questi valori */
@@ -90,27 +92,23 @@ img {                                             /* tutte le immagini ridimensi
     display: flex;
     justify-content: space-between;
 }
-.center-box2 {                                     /* definisco il box con le informazioni, dando le dimensioni e i dettagli estetici*/
-    position: absolute;                          /* absolute permette di dividere in modo equo tutti gli elementi della div center-box, mettendoli in linea */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 50%;
-    padding: 50px;
-    background-color: #ebecee;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);
-    border-radius: 5px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-}
 .area {                                           /* area è la div, quindi lo spazio dei "sotto box" della box principale */
     justify-content: space-between;
     box-sizing: border-box;
     white-space: pre-line; /* Rispetta gli a capo e gli spazi all'interno del paragrafo */
     word-wrap: break-word; /* Permette di andare a capo in mezzo alle parole se necessario */
     color:rgb(38, 39, 39);
+}
+.page2area {                                          /* area è la div, quindi lo spazio dei "sotto box" della box principale */
+    width: 1000px;
+    height: 300px;
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    white-space: pre-line; /* Rispetta gli a capo e gli spazi all'interno del paragrafo */
+    word-wrap: break-word; /* Permette di andare a capo in mezzo alle parole se necessario */
+    color:rgb(222, 228, 228);
 }
 .centered-image {                                 /* dimensioni immagine */
 max-width: 100%;
@@ -121,6 +119,7 @@ height: auto;
     height: 100%;
     border-left: 8px solid orange;
     border-radius:5px;
+    padding:5px;
 }
 .box-credit {                                     /* creo il box che conterrà i crediti */
     position: absolute;
@@ -147,6 +146,7 @@ height: auto;
     font-size: 14px;
 }
 .parent {
+    padding-left: 5%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -160,4 +160,14 @@ height: auto;
 .bordered-image {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
     background-color: white;
+}
+.foto1{
+    width: 200px;
+    height: 200px;
+}
+.esportgrid {
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
