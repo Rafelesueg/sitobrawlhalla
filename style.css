@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Rowdies:wght@300;400&display=swap'); /* Font scelto per il sito */
+
+*{                                                /* Tutti gli elementi della pagina, hanno questi valori */
+    padding: 0;                 
+    margin: 0;
+}
+body{                                             /* Prime 4 righe - formatto il testo definendo il font, la grandezza e il suo margine, scelgo poi lo sfondo del sito */
+    font-family: "Rowdies", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin:auto;
+    background-image:url(images/sfondo.png);
+    background-size:cover;
+}
+li, a {                                           /* Definisco tutte le scritte contenute nei tag li e a con questi attributi */
+    font-family: "Rowdies", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:rgb(38, 39, 39);
+    text-decoration: none;                        /* Serve per non far uscire il testo sottolineato */
+}
+header {                        
+    display: absolute;                            /* display absolute serve per centrare tutti gli elementi */
+    justify-content: space-between;               /* justify-content tutti gli elementi col giusto spazio */
+    align-items: center;                          /* align-items allinea gli oggetti al centro */
+    background-color: #ffffff;                  /* colore di sfongo dell'HEADER */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);  /* Ombra box per renderlo più visibile */
+}
+h4 {
+    color:orange;                               /* tutte le scritte in h4, di color arancione */
+}
+img {                                             /* tutte le immagini ridimensionate sotto questi valori */
+    width: 200px;
+    height: 200px;
+}
+.logo {                                           /* il logo ridimensionato sotto questi valori */
+    width: 113px;
+    height: 86px;
+}
+.nav_links {
+    display: flex;                                /* display flex serve per centrare tutti gli elementi in modo flessibile */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;                              /* evita di andare a capo se si sfonda lo spazio dell'header */
+}
+.item {
+    padding: 10px;                                /* spaziatura tra gli elementi */
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.item a:hover {
+    color:orange
+}
+.item::before {                                   /* elemento grafico la "|" di color arancione */
+    content: "| ";
+    color: orange;
+    font-size:20px;
+}
+.padding-table-columns {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: small;
+}
+.nav_links li {                                   /* allineo gli elementi del tag "li" */
+    display: inline-block;
+    margin: 0 50px;
+}
+.nav_links li a{                                  /* aggiungo un effetto alle scritte */
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{                            /* al passggio del mouse le scritte diventano arancioni */
+    color:orange
+}
+.center-box {                                     /* definisco il box con le informazioni, dando le dimensioni e i dettagli estetici*/
+    position: absolute;                           /* absolute permette di dividere in modo equo tutti gli elementi della div center-box, mettendoli in linea */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50%;
+    padding: 50px;
+    background-color: #ebecee;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.area {                                           /* area è la div, quindi lo spazio dei "sotto box" della box principale */
+    flex: 1;
+    padding: 20px;                                /* spaziatura di 20 tra i box presenti */
+    box-sizing: border-box;
+    text-align: center;
+    color:rgb(38, 39, 39);
+}
+.centered-image {                                 /* dimensioni immagine */
+max-width: 100%;
+height: auto;
+}
+.line-divider {                                   /* divisore tra i box appena creati */
+    display: inline-block;
+    height: 100%;
+    border-left: 8px solid orange;
+    border-radius:5px;
+}
+.box-credit {                                     /* creo il box che conterrà i crediti */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);
+    color: rgb(38, 39, 39);
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+.box-credit-onscroll {                                     /* creo il box che conterrà i crediti */
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);
+    color: rgb(38, 39, 39);
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+.inside{
+    width: 200px;
+    height: 200px;
+}
+.bordered-image {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+    background-color: white;
+}
