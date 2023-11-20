@@ -26,6 +26,9 @@ header {
     background-color: #ffffff;                  /* colore di sfongo dell'HEADER */
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);  /* Ombra box per renderlo più visibile */
 }
+h1 {
+    color:orange;                               /* tutte le scritte in h4, di color arancione */
+}
 h4 {
     color:orange;                               /* tutte le scritte in h4, di color arancione */
 }
@@ -72,7 +75,7 @@ img {                                             /* tutte le immagini ridimensi
     color:orange
 }
 .center-box {                                     /* definisco il box con le informazioni, dando le dimensioni e i dettagli estetici*/
-    position: absolute;                           /* absolute permette di dividere in modo equo tutti gli elementi della div center-box, mettendoli in linea */
+    position: absolute;                          /* absolute permette di dividere in modo equo tutti gli elementi della div center-box, mettendoli in linea */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -81,17 +84,32 @@ img {                                             /* tutte le immagini ridimensi
     padding: 50px;
     background-color: #ebecee;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);
+    border-radius: 5px;
     text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.center-box2 {                                     /* definisco il box con le informazioni, dando le dimensioni e i dettagli estetici*/
+    position: absolute;                          /* absolute permette di dividere in modo equo tutti gli elementi della div center-box, mettendoli in linea */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50%;
+    padding: 50px;
+    background-color: #ebecee;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.527);
     border-radius: 5px;
     color: white;
     display: flex;
     justify-content: space-between;
 }
 .area {                                           /* area è la div, quindi lo spazio dei "sotto box" della box principale */
-    flex: 1;
-    padding: 20px;                                /* spaziatura di 20 tra i box presenti */
+    justify-content: space-between;
     box-sizing: border-box;
-    text-align: center;
+    white-space: pre-line; /* Rispetta gli a capo e gli spazi all'interno del paragrafo */
+    word-wrap: break-word; /* Permette di andare a capo in mezzo alle parole se necessario */
     color:rgb(38, 39, 39);
 }
 .centered-image {                                 /* dimensioni immagine */
